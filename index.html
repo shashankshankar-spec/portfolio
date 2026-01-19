@@ -9,9 +9,11 @@
 
   <style>
     :root {
-      --bg: #0f0f0f;
-      --fg: #f5f5f5;
-      --muted: #b3b3b3;
+      --bg-light: #fafafa;
+      --bg-dark: #0f0f0f;
+      --fg-dark: #111;
+      --fg-light: #f5f5f5;
+      --muted: #666;
       --accent: #ff4d4d;
     }
 
@@ -23,8 +25,8 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background: var(--bg);
-      color: var(--fg);
+      background: var(--bg-light);
+      color: var(--fg-dark);
       line-height: 1.6;
     }
 
@@ -33,8 +35,14 @@
       text-decoration: none;
     }
 
+    /* HERO */
     header {
-      padding: 6rem 2rem 4rem;
+      background: var(--bg-dark);
+      color: var(--fg-light);
+      padding: 6rem 2rem 5rem;
+    }
+
+    header .hero-inner {
       max-width: 1100px;
       margin: auto;
     }
@@ -46,15 +54,16 @@
     }
 
     header p {
-      max-width: 700px;
-      color: var(--muted);
+      max-width: 720px;
+      color: #cfcfcf;
       font-size: 1.1rem;
     }
 
+    /* SECTIONS */
     section {
       max-width: 1100px;
       margin: auto;
-      padding: 4rem 2rem;
+      padding: 4.5rem 2rem;
     }
 
     h2 {
@@ -62,6 +71,7 @@
       margin-bottom: 1.5rem;
     }
 
+    /* PROJECT GRID */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -69,7 +79,8 @@
     }
 
     .card {
-      background: #161616;
+      background: #ffffff;
+      border: 1px solid #e6e6e6;
       padding: 1.5rem;
       border-radius: 10px;
       transition: transform 0.2s ease;
@@ -99,10 +110,12 @@
       display: block;
     }
 
+    /* FOOTER */
     footer {
+      background: #f0f0f0;
       padding: 3rem 2rem;
       text-align: center;
-      color: var(--muted);
+      color: #777;
       font-size: 0.9rem;
     }
 
@@ -116,12 +129,14 @@
 
   <!-- HERO -->
   <header>
-    <h1>Shashank Shankar</h1>
-    <p>
-      BA (Hons) Communication graduate from Sunway University and Lancaster University
-      (Dual Degree Programme).  
-      Focused on strategic communication, branding, and creative storytelling.
-    </p>
+    <div class="hero-inner">
+      <h1>Shashank Shankar</h1>
+      <p>
+        BA (Hons) Communication graduate from Sunway University and Lancaster University
+        (Dual Degree Programme), with a strong interest in public relations, branding,
+        and research-driven communication.
+      </p>
+    </div>
   </header>
 
   <!-- PROJECTS -->
@@ -133,20 +148,20 @@
       <div class="card">
         <h3>Echo & Verse</h3>
         <p>
-          An academic branding project exploring how music lyrics and poetry intersect
-          as cultural texts. Built on market research, visual signifiers, and bold identity systems.
+          A research-led branding project exploring how music lyrics and poetry intersect
+          as cultural texts, supported by audience analysis and visual identity development.
         </p>
 
         <div class="image-block">
-          <img src="images/echo-verse.jpg" alt="Echo and Verse visual">
+          <img src="images/echo-verse.jpg" alt="Echo and Verse project">
         </div>
       </div>
 
       <div class="card">
         <h3>Lumirous — Press Release</h3>
         <p>
-          Internship press release developed for Lumirous, focusing on brand tone,
-          clarity, and audience alignment within real-world PR constraints.
+          Press release developed during a communications internship, focusing on
+          professional tone, structure, and brand-aligned messaging.
         </p>
 
         <div class="image-block">
@@ -157,8 +172,8 @@
       <div class="card">
         <h3>Visual Studies & Photography</h3>
         <p>
-          A personal visual archive exploring space, architecture, culture,
-          and memory. All photographs taken by me.
+          A curated visual archive examining space, culture, and visual storytelling.
+          All photographs were taken and edited by me.
         </p>
 
         <div class="image-block">
@@ -173,9 +188,9 @@
   <section>
     <h2>Approach</h2>
     <p>
-      My work is driven by the belief that strong communication relies on memorable
-      visual and narrative cues. I lean toward bold design decisions that are loud
-      with intent, not noise — balancing clarity, emotion, and audience psychology.
+      I approach communication through a balance of research, observation, and execution.
+      My work prioritises clarity and intent, ensuring that creative decisions support
+      audience understanding rather than distract from it.
     </p>
   </section>
 
