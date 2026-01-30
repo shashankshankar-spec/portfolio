@@ -27,7 +27,7 @@
       font-family: 'Inter', sans-serif;
       background: var(--bg-light);
       color: var(--fg-dark);
-      line-height: 1.6;
+      line-height: 1.75;
     }
 
     a {
@@ -35,21 +35,19 @@
       text-decoration: none;
     }
 
-    /* HERO */
     header {
       background: var(--bg-dark);
       color: var(--fg-light);
       padding: 6rem 2rem 5rem;
     }
 
-    header .hero-inner {
-      max-width: 1100px;
+    .wrap {
+      max-width: 1000px;
       margin: auto;
     }
 
     header h1 {
       font-size: 3rem;
-      font-weight: 700;
       margin-bottom: 1rem;
     }
 
@@ -59,68 +57,59 @@
       font-size: 1.1rem;
     }
 
-    /* SECTIONS */
     section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 4.5rem 2rem;
+      padding: 5rem 2rem;
     }
 
-    h2 {
-      font-size: 2rem;
+    section h2 {
+      font-size: 2.2rem;
       margin-bottom: 1.5rem;
     }
 
-    /* PROJECT GRID */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-    }
-
-    .card {
-      background: #ffffff;
-      border: 1px solid #e6e6e6;
-      padding: 1.5rem;
-      border-radius: 10px;
-      transition: transform 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-    }
-
-    .card h3 {
+    section h3 {
+      font-size: 1.2rem;
+      margin-top: 2.5rem;
       margin-bottom: 0.5rem;
+      color: #333;
     }
 
-    .card p {
-      color: var(--muted);
-      font-size: 0.95rem;
+    section p {
+      max-width: 800px;
+      color: #444;
+      margin-bottom: 1.2rem;
     }
 
-    .image-block {
-      margin-top: 1.5rem;
-      border-radius: 8px;
-      overflow: hidden;
+    .project {
+      border-top: 1px solid #e0e0e0;
+      padding-top: 4rem;
     }
 
-    .image-block img {
+    .project img {
       width: 100%;
-      display: block;
+      margin: 2rem 0;
+      border-radius: 6px;
     }
 
-    /* FOOTER */
+    .label {
+      font-size: 0.9rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+
+    .intro-line {
+      font-size: 1.1rem;
+      max-width: 720px;
+      color: #333;
+    }
+
     footer {
       background: #f0f0f0;
       padding: 3rem 2rem;
       text-align: center;
       color: #777;
       font-size: 0.9rem;
-    }
-
-    footer a {
-      margin: 0 0.5rem;
     }
   </style>
 </head>
@@ -129,69 +118,152 @@
 
   <!-- HERO -->
   <header>
-    <div class="hero-inner">
+    <div class="wrap">
       <h1>Shashank Shankar</h1>
       <p>
         BA (Hons) Communication graduate from Sunway University and Lancaster University
-        (Dual Degree Programme), with a strong interest in public relations, branding,
-        and research-driven communication.
+        (Dual Degree Programme). My work sits at the intersection of public relations,
+        branding, and research-led communication.
       </p>
     </div>
   </header>
 
-  <!-- PROJECTS -->
+  <!-- INTRO LINE -->
   <section>
-    <h2>Selected Work</h2>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>Echo & Verse</h3>
-        <p>
-          A research-led branding project exploring how music lyrics and poetry intersect
-          as cultural texts, supported by audience analysis and visual identity development.
-        </p>
-
-        <div class="image-block">
-          <img src="echo-verse.png" alt="Echo and Verse project">
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Lumirous — Press Release</h3>
-        <p>
-          Press release developed during a communications internship, focusing on
-          professional tone, structure, and brand-aligned messaging.
-        </p>
-
-        <div class="image-block">
-          <img src="lumirous.png" alt="Lumirous press release">
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Visual Studies & Photography</h3>
-        <p>
-          A curated visual archive examining space, culture, and visual storytelling.
-          All photographs were taken and edited by me.
-        </p>
-
-        <div class="image-block">
-          <img src="visuals.jpeg" alt="Photography work">
-        </div>
-      </div>
-
+    <div class="wrap">
+      <p class="intro-line">
+        The following projects reflect how I approach communication across different
+        contexts — from formal public relations writing to conceptual branding and
+        long-form editorial work.
+      </p>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section>
-    <h2>Approach</h2>
-    <p>
-      I approach communication through a balance of research, observation, and execution.
-      My work prioritises clarity and intent, ensuring that creative decisions support
-      audience understanding rather than distract from it.
-    </p>
+  <!-- PROJECT 01: LUMIROUS -->
+  <section class="project">
+    <div class="wrap">
+      <span class="label">Project 01 — Public Relations</span>
+      <h2>Lumirous — Press Release</h2>
+
+      <img src="lumirous.png" alt="Lumirous press release visual">
+
+      <h3>Context</h3>
+      <p>
+        This press release was written during my internship, where I supported
+        communications and public-facing brand materials. The task required adherence
+        to professional PR conventions while maintaining clarity and brand alignment.
+      </p>
+
+      <h3>My Role</h3>
+      <p>
+        I was responsible for structuring the press release, refining the language,
+        and ensuring correct formatting, including headline hierarchy, dateline usage,
+        and boilerplate inclusion.
+      </p>
+
+      <h3>Press Release (Excerpt)</h3>
+      <p><strong>[Headline]</strong></p>
+      <p><em>[City, Date]</em></p>
+      <p>
+        [Paste the readable press release text here. This should be full text, not a
+        screenshot — formatted for legibility.]
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECT 02: ECHO & VERSE -->
+  <section class="project">
+    <div class="wrap">
+      <span class="label">Project 02 — Branding & Research</span>
+      <h2>Echo & Verse</h2>
+
+      <img src="echo-verse.png" alt="Echo and Verse branding">
+
+      <h3>Brand Rationale</h3>
+      <p>
+        Echo & Verse was an academic branding project focused on bridging music and
+        poetry, positioning song lyrics as cultural texts comparable to traditional
+        literary forms.
+      </p>
+
+      <h3>Research Insight</h3>
+      <p>
+        Research highlighted the importance of strong visual signifiers in digital
+        content. Audiences responded more actively to bold, memorable identity systems,
+        which informed the brand’s visual and tonal direction.
+      </p>
+
+      <h3>Visual Identity</h3>
+      <p>
+        The brand adopted loud, high-contrast typography and colour choices, executed
+        with intent rather than excess, to reinforce memorability and cultural presence.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECT 03: EDITORIAL WRITING -->
+  <section class="project">
+    <div class="wrap">
+      <span class="label">Project 03 — Editorial Writing</span>
+      <h2>Skincare Newsletter</h2>
+
+      <h3>Audience & Intent</h3>
+      <p>
+        This newsletter was written for a general audience interested in skincare and
+        personal wellbeing. The objective was to communicate information clearly while
+        maintaining trust, sensitivity, and accessibility.
+      </p>
+
+      <h3>Why This Format Matters</h3>
+      <p>
+        Long-form editorial writing allows for depth and nuance that short-form content
+        cannot achieve. This project demonstrates my ability to sustain tone, structure,
+        and audience engagement across longer pieces of writing.
+      </p>
+
+      <p><strong>[Newsletter Headline]</strong></p>
+      <p>
+        [Paste a readable excerpt of the newsletter here — not the full Canva dump.
+        Enough to show voice, structure, and clarity.]
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECT 04: PR MEDIA KIT -->
+  <section class="project">
+    <div class="wrap">
+      <span class="label">Project 04 — PR Materials</span>
+      <h2>PR Media Kit — CelcomDigi (Academic Project)</h2>
+
+      <h3>Objective</h3>
+      <p>
+        This media kit was developed as part of a university project simulating real-world
+        PR practices. The goal was to understand how brands present essential information
+        to media stakeholders.
+      </p>
+
+      <h3>Design Rationale</h3>
+      <p>
+        The kit prioritised clarity, hierarchy, and brand consistency, reflecting how
+        professional PR materials are structured for quick media reference.
+      </p>
+    </div>
+  </section>
+
+  <!-- PHOTOGRAPHY -->
+  <section class="project">
+    <div class="wrap">
+      <span class="label">Visual Observation</span>
+      <h2>Photography</h2>
+
+      <img src="visuals.jpeg" alt="Photography work">
+
+      <p>
+        Photography functions as a parallel practice in my work, sharpening my sensitivity
+        to space, composition, and visual storytelling. Each image reflects an interest
+        in how environments communicate meaning without words.
+      </p>
+    </div>
   </section>
 
   <!-- FOOTER -->
